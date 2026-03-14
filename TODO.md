@@ -1,0 +1,68 @@
+# Task: Build MRS (Muslim Revive Skills) Platform with Enhanced Features
+
+## Plan
+- [x] Step 1: Setup and Configuration
+  - [x] Initialize Supabase
+  - [x] Create database schema (users, tasks, courses, articles, messages, hadith, quran)
+  - [x] Setup authentication and RLS policies
+  - [x] Update design system with Islamic-themed colors
+- [x] Step 2: Core Infrastructure
+  - [x] Create types definitions
+  - [x] Create database API functions
+  - [x] Update AuthContext for role-based authentication
+  - [x] Update RouteGuard for protected routes
+  - [x] Create layout components (AppLayout with sidebar)
+- [x] Step 3: Authentication Pages
+  - [x] Create Login page
+  - [x] Create Register page with WhatsApp integration
+  - [x] Update routes configuration
+- [x] Step 4: Main Application Pages
+  - [x] Create Home/Dashboard page
+  - [x] Create Tasks page with CRUD operations
+  - [x] Create Courses page with browsing and enrollment
+  - [x] Create Articles page with browsing
+  - [x] Create Hadith display page
+  - [x] Create Quran display page
+  - [x] Create Messages page with conversation threads
+  - [x] Create Profile page
+- [x] Step 5: Teacher Features
+  - [x] Create Course Publishing page with file uploads
+  - [x] Create Article Publishing page
+  - [x] Add video and document upload functionality
+  - [x] Add pricing options for courses
+- [x] Step 6: Admin Features
+  - [x] Create Admin Dashboard
+  - [x] Create User Management page
+- [x] Step 7: Payment and Enrollment System
+  - [x] Create enrollments and payments tables
+  - [x] Add JazzCash and credit card payment methods
+  - [x] Create enrollment page with payment processing
+  - [x] Create payment processing edge function
+  - [x] Update courses page to show enrollment status
+- [x] Step 8: WhatsApp Integration
+  - [x] Add WhatsApp group joining option in registration
+  - [x] Create WhatsApp invite edge function
+  - [x] Add WhatsApp number field to profiles
+- [x] Step 9: File Upload System
+  - [x] Create Supabase storage bucket for course materials
+  - [x] Create FileUpload component
+  - [x] Add video upload to courses
+  - [x] Add document upload to courses and articles
+- [x] Step 10: Finalization
+  - [x] Update App.tsx with AuthProvider and routing
+  - [x] Run lint and fix all issues
+  - [x] Verify all features are complete
+
+## Notes
+- Platform supports 4 user roles: student, teacher, team_member, public, admin
+- Three main content categories: Islamic Studies, AI Technology, Science
+- Special Islamic content: Hadith and Quranic verses
+- First registered user becomes admin automatically
+- Teachers can publish courses and articles with video/document uploads
+- All users can send messages to each other
+- Islamic-themed design with green and gold color scheme
+- Payment system supports JazzCash and credit card
+- Course enrollment with free and paid options
+- WhatsApp group automation after registration
+- File upload system for course videos and documents (up to 500MB for videos, 50MB for documents)
+- All features implemented and lint passed successfully
